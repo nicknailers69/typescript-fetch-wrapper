@@ -1,21 +1,24 @@
 # Typescript wrapper for Node-Fetch
 
+I had to fix some things so it behaves with npm. Everything should work as intended from v1.0.8 and up.
+
 ## Installation
 npm i -S typescript-fetch-wrapper
 
 ## Usage
 
-// @ts-ignore
-const Fetcher = require("typescript-fetch-wrapper/src/index.js");
 
-const F = new Fetcher.Fetcher();
+import {Fetcher} from "typescript-fetch-wrapper";
+
+const fetcher = new Fetcher();
 
 
-F.Query("http://localhost:3333/.well-known", "GET").then(res => console.log(res))
+fetcher.Query("http://localhost:3333/.well-known", "GET").then(res => console.log(res))
+
 
 // Simple Get Query without headers
 
-fetch.Query("http://edns.ip-api.com/json", "GET").then((results:any) => {
+fetcher.Query("http://edns.ip-api.com/json", "GET").then((results:any) => {
     console.log(results);
 }).catch(err => console.log(err));
 

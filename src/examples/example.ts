@@ -1,10 +1,16 @@
-import {Fetcher} from "../";
+// @ts-ignore
+import {Fetcher} from "typescript-fetch-wrapper";
 
-const fetch = new Fetcher();
+const fetcher = new Fetcher();
+
+
+fetcher.Query("http://localhost:3333/.well-known", "GET").then(res => console.log(res))
+
+
 
 // Simple Get Query without headers
 
-fetch.Query("http://edns.ip-api.com/json", "GET").then((results:any) => {
+fetcher.Query("http://edns.ip-api.com/json", "GET").then((results:any) => {
     console.log(results);
 }).catch(err => console.log(err));
 

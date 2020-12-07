@@ -1,6 +1,6 @@
 {
   "name": "typescript-fetch-wrapper",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "wrapper for node-fetch to make it easy to use",
   "repository": "https://github.com/nicknailers69/typescript-fetch-wrapper",
   "main": "index.js",
