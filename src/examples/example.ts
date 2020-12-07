@@ -1,4 +1,4 @@
-import {Fetcher} from "../index";
+import {Fetcher} from "../";
 
 const fetch = new Fetcher();
 

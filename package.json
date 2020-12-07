@@ -1,9 +1,9 @@
 {
   "name": "typescript-fetch-wrapper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Typescript wrapper for node-fetch to make it easy to use",
   "repository": "https://github.com/nicknailers69/typescript-fetch-wrapper",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
