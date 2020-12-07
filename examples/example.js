@@ -1,24 +1,11 @@
-# Typescript wrapper for Node-Fetch
-
-## Installation
-npm i -S typescript-fetch-wrapper
-
-## Usage
-
-// @ts-ignore
-const Fetcher = require("typescript-fetch-wrapper/src/index.js");
-
-const F = new Fetcher.Fetcher();
-
-
-F.Query("http://localhost:3333/.well-known", "GET").then(res => console.log(res))
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var index_1 = require("../index");
+var fetch = new index_1.Fetcher();
 // Simple Get Query without headers
-
-fetch.Query("http://edns.ip-api.com/json", "GET").then((results:any) => {
+fetch.Query("http://edns.ip-api.com/json", "GET").then(function (results) {
     console.log(results);
-}).catch(err => console.log(err));
-
+}).catch(function (err) { return console.log(err); });
 /**
  * Same concept for other methods with headers and / or body:
  *
@@ -39,4 +26,5 @@ fetch.Query("http://edns.ip-api.com/json", "GET").then((results:any) => {
  *  async () => await fetch.Query("your url here", "POST", headers, {my:"body object"}); //returns a promise
  *
  *
- */
+ */ 
+//# sourceMappingURL=example.js.map
