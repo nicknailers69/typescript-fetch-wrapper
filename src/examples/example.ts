@@ -1,6 +1,6 @@
 import {Fetcher} from "../index";
 
-const fetch = new Fetcher;
+const fetch = new Fetcher();
 
 // Simple Get Query without headers
 

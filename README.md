@@ -8,7 +8,7 @@ npm i -S typescript-fetch-wrapper
 
 import {Fetcher} from "typescript-fetch-wrapper";
 
-const fetch = new Fetcher;
+const fetch = new Fetcher();
 
 // Simple Get Query without headers
 
